@@ -5,8 +5,9 @@ This was my take on the "technical documentation page" assignment from FCC. It e
 
 ## Screenshots and Live Demo
 [Demo](http://daniellelyle.s3.eu-central-1.amazonaws.com/rwd-projects/techdoc/index.html)
-
+### Portrait Mode
 ![screenshot portrait](https://daniellelyle.s3.eu-central-1.amazonaws.com/rwd-projects/techdoc/portrait.webp)
+### Landscape Mode
 ![screenshot landscape](https://daniellelyle.s3.eu-central-1.amazonaws.com/rwd-projects/techdoc/landscape.webp)
 
 ## Scalability
