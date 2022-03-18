@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box; 
+    font-family: 'Assistant', sans-serif;
+    color: #0e172c;
+    font-size: calc(16px + 1vw);
+    line-height: calc(1.1em + 0.5vw);
+  }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}
+
+h1 a {
+    font-family: 'Kreon', serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media (min-width: 50em) {
+    h1 a {
+      font-size: 50px;
+    }
+  }
+
+h2 {
+    font-family: 'Kreon', serif;
+    font-weight: 700;
+    font-size: calc(1rem + 1vw);
+    line-height: 0;
+}
+
+h3 {
+    font-family: 'Kreon', serif;
+    font-weight: 400;
+    font-size: calc(0.25rem + 1vw);
+    width: 100%;
+    background: rgba(254, 199, 215, 0.5);
+    padding: 1vw 1vw 0 1vw;
+    text-align: right;
+    margin-top: -2vw;
+    border-bottom: 0.25vmin solid #d9d4e7;
+}
+
+p {
+    font-size: 0.75rem;
+    background:rgba(255, 255, 255, 0.9);
+    box-shadow: .25vmin .25vmin .5vmin rgba(0,0,0,0.1);
+    border-left: 1vmin solid #a786df;
+    padding: 1vmin;
+}
+
+code, ul {
+    font-family: 'Red Hat Mono', monospace;
+    width: 100vmin;
+    font-size: 2.5vmin;
+    background: #d9d4e7;
+    display: block;
+    padding: 2vmin 5vmin;
+    border: .25vmin solid #a786df;
+    border-radius: 1vmin;
+    margin: 0 auto;
+    box-shadow: .5vmin .5vmin .5vmin rgba(0,0,0,0.2);
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 2.5vmin;
+}
+
+.short-text { 
+    display: none; 
+}
+
+.full-text {
+    display: block;
+}
+
+.nav-link {
+    padding: 0.25rem;
+    text-decoration: none;
+    font-size: 0.5rem;
+    color: #0e172c;
+}
+
+.nav-link:hover {
+    background-color: #0e172c;
+    color: #fffffe;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fec7d7;
+    width: 30vmin;
+    font-size: 3.5vmin;
+    padding: 1vmin;
+    box-shadow: .5vmin 0 .5vmin rgba(0,0,0,0.2);
+}
+
+#topnav {
+    display: flex;
+    flex-direction: column;
+}
+
+a.icon {
+    display: none;
+}
+
+main {
+    margin-left: 30vmin;
+    padding: 5vmin;
+}
+
+picture img { 
+    width: 7rem;
+    float: right;
+}
+
