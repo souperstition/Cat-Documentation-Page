@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Kreon:wght@400;700&family=Red+Hat+Mono:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://unpkg.com/aos@next/dist/aos.css');
+
+
 * {
     box-sizing: border-box; 
-    font-family: 'Assistant', sans-serif;
     color: #0e172c;
     font-size: calc(16px + 1vw);
     line-height: calc(1.1em + 0.5vw);
   }
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     display: flex;
@@ -45,6 +57,7 @@ h3 {
 }
 
 p {
+    font-family: 'Assistant', sans-serif;
     font-size: 0.75rem;
     background:rgba(255, 255, 255, 0.9);
     box-shadow: .25vmin .25vmin .5vmin rgba(0,0,0,0.1);
@@ -123,5 +136,106 @@ main {
 picture img { 
     width: 7rem;
     float: right;
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+
+    h2 {
+        line-height: 1rem;
+    }
+
+    h3 {
+        font-size: 0.75rem;
+        margin-top: -5vw;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    code, ul {
+        max-width: 80vw;
+    }
+
+    nav {
+        position: fixed;
+        bottom: unset;
+        width: 100%;
+        max-width: 100vw;
+        background: #d9d4e7;
+        z-index: 999;
+        padding: 0;
+    }
+
+    h1 {
+        padding: 1vmin 0 0 1vmin;
+    }
+
+    #topnav {
+        display: none;
+        grid-template-columns: auto auto;
+        gap: 5px;
+        background: #d9d4e7;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #topnav a {
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    #topnav a:hover {                
+        background-color: #0e172c;
+        color: #fffffe;
+    }
+
+    a.icon {
+        display: block;
+        position: absolute;
+        right: 2vmin;
+        top: 2vmin;
+    }
+
+
+}
+
+@media (orientation: landscape) {
+    #topnav {
+        display: flex !important;
+    }
+
+    #topBtn {
+        display: none !important;
+    }
+}
+
+#topBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: .5vmin solid #d9d4e7;
+    outline: none; 
+    background-color: #d9d4e7; 
+    color: #a786df; 
+    padding: 0.5vmin; 
+    border-radius: 50%; 
+    font-size: calc(16px + 1vw); 
+    height: calc(30px + 1vw);
+    width: calc(30px + 1vw);
+    text-align: center;
+    box-shadow: 0 0 2vmin rgba(0,0,0,0.5);
+}
+
+#topBtn:active {
+    background-color: #a786df; 
+    color: #fffffe;
 }
 
