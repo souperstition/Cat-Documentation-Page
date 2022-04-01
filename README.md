@@ -4,7 +4,7 @@
 This was my take on the "technical documentation page" assignment from FCC. It ended up not being very.. technical.. but I am so happy with how it turned out. 
 
 ## Screenshots and Live Demo
-[Demo](http://daniellelyle.s3.eu-central-1.amazonaws.com/rwd-projects/techdoc/index.html)
+[Demo](http://daniellelyle.s3.eu-central-1.amazonaws.com/portfolio/techdoc/index.html)
 ### Portrait Mode
 ![screenshot portrait](https://daniellelyle.s3.eu-central-1.amazonaws.com/portfolio/techdoc/portrait.webp) 
 ### Landscape Mode
