@@ -1,4 +1,4 @@
-[Live Site Demo](https://itsdani.me/portfolio/techdoc/index.html)
+[Live Site Demo](https://souperstition.github.io/Cat-Documentation-Page/)
 
 # Cat Documentation Page
 
