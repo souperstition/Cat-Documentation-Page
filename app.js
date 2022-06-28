@@ -1,12 +1,10 @@
 //nav hide on click
-function navHideOnClick() {
-	var x = document.getElementById('topnav');
-	if (x.style.display === 'grid') {
-		x.style.display = 'none';
-	} else {
-		x.style.display = 'grid';
-	}
-}
+const topMenu = document.querySelector('#topnav');
+const navBtn = document.querySelector('.fa-bars');
+
+navBtn.addEventListener('click', () => {
+	topMenu.classList.toggle('hidden');
+});
 
 //top button
 mybutton = document.getElementById('topBtn');
