@@ -6,6 +6,22 @@ navBtn.addEventListener('click', () => {
 	topMenu.classList.toggle('hidden');
 });
 
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		topMenu.classList.add('hidden');
+	});
+});
+
+const navbar = document.querySelector('#navbar');
+
+document.body.addEventListener('click', e => {
+	if (!navbar.contains(e.target)) {
+		topMenu.classList.add('hidden');
+	}
+});
+
 //top button
 mybutton = document.getElementById('topBtn');
 
